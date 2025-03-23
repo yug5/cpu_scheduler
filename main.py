@@ -12,12 +12,12 @@ if __name__ == "__main__":
     choice = int(input("Enter choice (1/2/3): "))
     processes = get_process_input()
     
-#     if choice == 1:
-#         fcfs(processes)
-#     elif choice == 2:
-#         sjf(processes)
-#     elif choice == 3:
-#         time_quantum = int(input("Enter Time Quantum for RR: "))
-#         round_robin(processes, time_quantum)
-#     else:
-#         print("Invalid choice.")
+    if choice == 1:
+        fcfs(processes)
+    elif choice == 2:
+        sjf(processes)
+    elif choice == 3:
+        time_quantum = int(input("Enter Time Quantum for RR: "))
+        round_robin(processes, time_quantum)
+    else:
+        print("Invalid choice.")
