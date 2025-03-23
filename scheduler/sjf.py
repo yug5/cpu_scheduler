@@ -5,5 +5,3 @@ def sjf(processes):
     for pid, arrival, burst in processes:
         if time < arrival:
             time = arrival
-        print(f"Process {pid} executed from {time} to {time + burst}")
-        time += burst
