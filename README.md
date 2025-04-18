@@ -1,70 +1,70 @@
-# Intelligent CPU Scheduler Simulator
+# CPU Scheduling Algorithms Simulator
 
-## 📌 Overview
+A web-based simulator that visualizes and compares different CPU scheduling algorithms using Streamlit.
 
-This project is a **CPU Scheduling Simulator** that supports:
+## 🚀 Features
 
 - **First-Come, First-Serve (FCFS)**
 - **Shortest Job First (SJF)**
 - **Round Robin (RR)**
+- Interactive process input
+- Visual timeline representation
+- Performance metrics comparison
+- Real-time algorithm comparison
 
-The simulator takes process details as input and provides scheduling results along with a Gantt chart for visualization.
+## 📋 Requirements
 
-## 🛠️ Features
+- Python 3.7+
+- Streamlit
+- Other dependencies listed in requirements.txt
 
-✅ Simulates multiple scheduling algorithms  
-✅ Supports user input for process details  
-✅ Generates a **Gantt chart** for visualization  
-✅ Modular structure for easy expansion
+## 🛠️ Installation
 
-## 📂 Project Structure
-
-```
-cpu_scheduler/
-│── scheduler/
-│   ├── fcfs.py
-│   ├── sjf.py
-│   ├── round_robin.py
-│   ├── utils.py
-│── main.py
-│── README.md
-```
-
-## 🚀 How to Run
-
-1️⃣ Clone the repository
-
+1. Clone the repository:
 ```bash
-git clone https://github.com/yug5/cpu_scheduler.git
+git clone https://github.com/yourusername/cpu_scheduler.git
 cd cpu_scheduler
 ```
 
-2️⃣ Run the simulator
-
+2. Install dependencies:
 ```bash
-python main.py
+pip install -r requirements.txt
 ```
 
-3️⃣ Choose a scheduling algorithm and provide process details
+## 🎮 Usage
 
-## 🔧 Requirements
-
-- Python 3+
-- Install dependencies if required
-
+1. Run the Streamlit app:
 ```bash
-pip install matplotlib
+streamlit run app.py
 ```
 
-## 📊 Example Output (Gantt Chart)
+2. In the sidebar:
+   - Enter the number of processes
+   - Input process details (ID, arrival time, burst time)
+   - Set the time quantum for Round Robin
 
-![Gantt Chart Example](https://via.placeholder.com/600x200.png?text=Gantt+Chart+Example)
+3. Click "Run Comparison" to see the results
+
+## 📊 Output
+
+The app provides:
+- Visual timeline for each algorithm
+- Average waiting and turnaround times
+- Comparison summary showing the best algorithm
+- Process execution details
+
+## 🎨 Features
+
+- Clean, modern UI
+- Interactive process input
+- Real-time visualization
+- Performance metrics
+- Side-by-side algorithm comparison
 
 ## 🤝 Contributing
 
-Feel free to contribute by improving the scheduler or adding new algorithms!
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-```
+## 📝 License
 
-Just copy and paste it into your `README.md` file. Let me know if you need changes! 🚀
-```
+This project is licensed under the MIT License - see the LICENSE file for details.
